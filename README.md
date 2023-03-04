@@ -1,6 +1,22 @@
 # git-hooks
 
-## Selection of git hooks I use.
+Selection of git hooks I use.
+
+## Implementation
+
+Example: (pre-push hook)
+
+Copy hook file code into (may need to remove .sample extension):
+
+```
+.git/hooks/pre-push
+```
+If new file created, may need to grant executable permissions by running on file:
+```
+$chmod a+x
+```
+
+## Hooks
 
 | file | effect |
 | --- | --- |
