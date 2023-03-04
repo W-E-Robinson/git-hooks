@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# Copy code into .git/hooks/pre-push (may need to remove .sample extension).
-# If new file created, may need to run $chmod a+x on the file to grant executable permissions.
-
 REDBOLD='\033[0;31;1m'
 GREENBOLD='\033[0;32;1m'
 BOLD='\033[1m'
