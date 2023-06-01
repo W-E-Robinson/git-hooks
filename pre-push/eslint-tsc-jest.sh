@@ -36,7 +36,7 @@ npx tsc
 
 if [ $? = 0 ]; then
     echo -e "${GREENBOLD} All type checks passed. Continuing push. ${NORMAL}"
-    exit 0
+    break
 else
     while true; do
       read -p "Not all type checking passed, do you wish to continue the push? (y)es or (n)o - " yn
