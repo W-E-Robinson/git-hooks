@@ -6,7 +6,6 @@ This repo contains git hooks I typically use.
 
 ### commit-msg
 - Stops commit if message does not adhere to [Conventional Commits](https://kapeli.com/cheat_sheets/Conventional_Commits.docset/Contents/Resources/Documents/index).
-- Stops commit if previous commit contains WIP (work in progress).
 
 ## Usage (POSIX commands only below)
 
