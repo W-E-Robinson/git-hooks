@@ -17,5 +17,5 @@ cp ./hooks/HOOK /path/to/target/git/directory/.git/hooks/HOOK
 
 2. Make the hook executable:
 ```sh
-chmod 755 HOOK
+chmod 755 path/to/target/git/directory/.git/hooks/HOOK
 ```
