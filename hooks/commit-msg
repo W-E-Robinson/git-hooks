@@ -1,5 +1,4 @@
 #!/bin/bash
-# test ALL one work lap top lol = or make rogue branch on this
 
 set -e
 
@@ -11,13 +10,6 @@ if [ -z "$1" ]; then
 fi
 
 commitTitle="$(cat $1 | head -n1)"
-
-lastCommitTitle=$(git log -1 --pretty=format:%s HEAD^)
-
-if echo "$lastCommitTitle" | grep -q "WIP"; then
-    echo "The previous commit is a work in progress (WIP) commit, amend before continuing commit."
-    exit 1
-fi
 
 if echo "$commitTitle" | grep -q "Merge branch"; then
     echo "Ignoring merge branch commit title and continuing commit."
